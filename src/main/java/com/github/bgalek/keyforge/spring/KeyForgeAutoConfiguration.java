@@ -11,15 +11,15 @@ import static com.github.bgalek.keyforge.spring.KeyForgeAutoConfiguration.KeyFor
 
 @Configuration
 @EnableConfigurationProperties(KeyForgeProperties.class)
-class KeyForgeAutoConfiguration {
+public class KeyForgeAutoConfiguration {
 
     @Bean
-    KeyForgeAuthenticationFilter keyForgeAuthenticationFilter(KeyForgeProperties keyForgeProperties) {
+    public KeyForgeAuthenticationFilter keyForgeAuthenticationFilter(KeyForgeProperties keyForgeProperties) {
         return new KeyForgeAuthenticationFilter(keyForgeProperties, null);
     }
 
     @ConfigurationProperties("keyforge")
-    static class KeyForgeProperties {
+    public static class KeyForgeProperties {
         private final List<String> keys;
 
         public KeyForgeProperties(List<String> keys) {

@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Optional;
 
-class KeyForgeAuthenticationFilter extends OncePerRequestFilter {
+public class KeyForgeAuthenticationFilter extends OncePerRequestFilter {
 
     private final KeyForgeProperties keyForgeProperties;
     private final KeyForge keyForge;
