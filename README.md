@@ -19,7 +19,7 @@ Add the following dependency to your `build.gradle.kts` file:
 
 ```kotlin
 dependencies {
-    implementation("com.github.bgalek:keyforge-spring-boot-starter:1.0.0")
+    implementation("com.github.bgalek:spring-boot-starter-keyforge:1.0.0")
 }
 ```
 
