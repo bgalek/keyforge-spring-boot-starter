@@ -1,1 +1,1 @@
-rootProject.name = "keyforge-spring-boot-starter"
+rootProject.name = "spring-boot-starter-keyforge"
