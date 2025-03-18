@@ -60,12 +60,12 @@ tasks.jar {
 publishing {
     publications {
         create<MavenPublication>("sonatype") {
-            artifactId = "keyforge-spring-boot-starter"
+            artifactId = "spring-boot-starter-keyforge"
             from(components["java"])
             pom {
-                name.set("keyforge-spring-boot-starter")
+                name.set("spring-boot-starter-keyforge")
                 description.set("KeyForge spring boot starter that integrates keyforge library.")
-                url.set("https://github.com/bgalek/keyforge-spring-boot-starter/")
+                url.set("https://github.com/bgalek/spring-boot-starter-keyforge/")
                 licenses {
                     license {
                         name.set("The Apache License, Version 2.0")
@@ -80,9 +80,9 @@ publishing {
                     }
                 }
                 scm {
-                    connection.set("scm:git:git://github.com/bgalek/keyforge-spring-boot-starter.git")
-                    developerConnection.set("scm:git:ssh://github.com:bgalek/keyforge-spring-boot-starter.git")
-                    url.set("https://github.com/bgalek/keyforge-spring-boot-starter/")
+                    connection.set("scm:git:git://github.com/bgalek/spring-boot-starter-keyforge.git")
+                    developerConnection.set("scm:git:ssh://github.com:bgalek/spring-boot-starter-keyforge.git")
+                    url.set("https://github.com/bgalek/spring-boot-starter-keyforge/")
                 }
             }
         }
